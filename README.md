@@ -1,69 +1,236 @@
-# Awesome-Mobile-Asset-Capture
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Mobile Asset Capture Banner" width="100%">
+</p>
 
-## Top Mobile Asset Capture Tools Ecosystem
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on On-Device Digitization, Barcode-Driven Inventory & Privacy-First Material Capture*  
-**Last updated: March 2026**
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Mobile Asset Capture**. These tools turn a phone camera into a capture device for the physical world — scanning documents, inventory tags, textures, and even 3D objects — with a spectrum running from polished commercial apps like Adobe Capture and CamScanner to open-source Android tools that keep every byte on-device.
-
-**Examples** include OpenNoteScanner, InvScan, TM 26, and xnotes (the category leaders).
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, offline processing, and privacy-respecting mobile capture — especially relevant as **Adobe Capture's cloud-first model** pushes privacy-conscious users toward on-device alternatives like **TM 26** for texture capture and **InvScan** for inventory OCR [citation:23][citation:1].
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-- **Adobe Capture** — **The reference commercial asset capture app.** Turns photos into vector shapes, color themes, materials, and 3D textures, with Creative Cloud sync. **Free with Adobe account; premium features require subscription**. **Trade-offs**: cloud-first architecture, account required, and output locked to Adobe formats [citation:2][citation:8]. **Best for Adobe subscribers** wanting seamless integration with Illustrator and Photoshop, accepting cloud dependency.
-
-- **CamScanner** — **The widely-installed document scanner.** Edge detection, OCR, and PDF export with cloud backup. **Free tier with watermark and ads; paid Pro**. **Trade-offs**: historical data-harvesting controversies have driven privacy-conscious users to open-source alternatives. **Best for users** already invested in its ecosystem, though open-source options now match its core features without the privacy trade-off.
-
-- **Microsoft Lens** — **The Office-integrated scanner.** Captures documents, whiteboards, and business cards with on-device OCR for some functions and OneDrive/Office integration. **Free with Microsoft account**. **Best for Microsoft 365 users** wanting scans that flow directly into Word, PowerPoint, or OneDrive.
-
-- **Genius Scan** — **The all-round commercial scanner.** On-device edge detection, perspective correction, and OCR once upgraded. **Free tier capped at 30 pages/month; ~$5/month or ~$50 one-time unlocks offline OCR**. **Best for users** wanting polished scanning with on-device processing, accepting the free tier's monthly cap.
-
-## Open-Source GitHub Projects
-
-- **OpenNoteScanner** — **The minimalist Android document scanner.** **Open-source, available on F-Droid, Google Play, and Amazon App Store** [citation:5][citation:10]. **Automatic edge detection on contrasting surfaces**, **perspective correction to a 90-degree top-down view**, **QR code page template support**, and **PDF export or image sharing** [citation:5]. **Organizes scans in a local gallery**. **Requires OpenCV Manager** — the app will prompt to download it if missing [citation:5][citation:10]. **The honest caveat**: **no OCR** — it captures and corrects images but does not extract text, and the UI is functional rather than polished [citation:10]. **Best for Android users** wanting the simplest possible privacy-respecting scanner with automatic edge detection and zero cloud dependency.
-
-- **InvScan** — **The Android inventory asset scanner with on-device OCR.** **Open-source diploma project (2022), Kotlin + Google ML Kit** [citation:1][citation:16]. **Photograph or scan an item's inventory tag** — ML Kit recognizes the number on-device, searches a remote MariaDB database via REST API, and generates an inventory report [citation:1]. **Features**: room selection, live search by inventory number, object marking during inventory sessions, and report generation saved to device storage [citation:16]. **On-device text recognition** means basic scanning does not depend on cloud services [citation:1]. **The honest caveat**: **requires a remote server** (MariaDB + PHP API) for database sync — it is not a standalone offline app, and it is a diploma project rather than a maintained product [citation:1][citation:16]. **Best for organizations** wanting a reference implementation for barcode/inventory-number capture with ML Kit OCR, accepting the server dependency.
-
-- **TM 26** — **The portable texture instrument for PBR material capture.** **Open-source hackathon project (vanilla HTML5/CSS3/JS, Three.js)** [citation:23]. **Point your phone at any surface** — the app processes the image locally and generates **full PBR maps (Albedo, Depth, Gloss) viewable on an interactive 3D sphere**, **seamless vector patterns (SVG)**, and **digital brush kits for Procreate/Photoshop** [citation:23]. **Tactile dial controls** for fine-tuning, local archive saving, and channel diagnostics [citation:23]. **100% client-side processing** — no backend, no uploads [citation:23]. **The honest caveat**: **hackathon prototype** — not a production-hardened app, and depth generation uses luminance filtering rather than true photogrammetry [citation:23]. **Best for 3D artists and texture designers** wanting to capture real-world surfaces as PBR materials without cloud tools, accepting prototype-stage maturity.
-
-- **xnotes** — **The handwriting-first notebook with vector PDF capture.** **Open-source (MIT), available on F-Droid** [citation:14]. **Pressure-sensitive ink** with variable-width strokes, **vector PDF import/export** (annotate a PDF and export true vector), **razor-sharp deep zoom**, **real highlighter blending**, and **every stroke stored as editable vector data** in the open `.xnote` format . **Stylus-aware**: pen and finger handled separately, with finger drawing auto-enabled on devices without a stylus . **No accounts, no telemetry, no network access** — files go through Android's Storage Access Framework . **The honest caveat**: **it is a note-taking and sketching app**, not a document scanner or texture capture tool — it captures handwritten input and PDF annotations, not camera-based assets . **Best for tablet users** wanting to capture handwritten notes and sketches as editable vector data, not for scanning physical documents.
-
-### Additional Strong Open-Source Options
-
-- **OSS Document Scanner** — **The Material You Android scanner with OCR and WebDAV sync.** **Open-source (Apache-2.0), Play Store and F-Droid** [citation:4][citation:15]. **Automatic edge detection**, bulk scanning, **offline Tesseract OCR** (models downloaded first), password-protected PDFs, and **sync to WebDAV, Google Drive, or OneDrive** [citation:15]. **The honest caveat**: **building from source requires NativeScript, OpenCV, and Tesseract setup** — the repo does not include the large native libraries [citation:4]. **Best for Android users** wanting a polished open-source scanner with OCR and WebDAV backup, installing via Play Store/F-Droid rather than building from source.
-
-- **Mapilio Mobile** — **The open-source street-level imagery capture app.** **Open-source (Expo/React Native), iOS and Android** [citation:21]. **Captures street-level imagery** and contributes to the OpenStreetMap ecosystem, with offline SQLite storage and self-hosted tile service support [citation:21]. **The honest caveat**: **specialized for geospatial imagery**, not general asset capture — it is for mapping, not documents or inventory [citation:21]. **Best for mappers and researchers** needing to capture geotagged street imagery for OpenStreetMap.
-
-- **Open Foris Arena Mobile** — **The offline field data capture app.** **Open-source, Android and iOS**, designed for **inventory surveys and field data collection** with support for numbers, coordinates, images, video, and text [citation:30]. **Configurable validation rules** for high-quality data, QR code login, and location averaging [citation:30]. **The honest caveat**: **requires an Open Foris Arena server** — it is a companion app, not a standalone capture tool [citation:30]. **Best for forestry and field survey teams** wanting structured offline data capture with server-side analytics.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Mobile asset capture tools differ significantly in capture target (documents vs inventory tags vs textures vs handwriting), processing model (on-device vs cloud), and platform support. **Adobe Capture and CamScanner are cloud-first** — they require accounts and sync data to servers [citation:2][citation:8]. **OpenNoteScanner and InvScan process on-device**, but **OpenNoteScanner lacks OCR** and **InvScan requires a remote MariaDB server** [citation:5][citation:1]. **TM 26 is a hackathon prototype** — its PBR map generation is local and impressive for a prototype, but it is not production-hardened [citation:23]. **xnotes captures handwriting and PDF annotations**, not camera-based physical assets . **The choice often comes down to target**: documents (OpenNoteScanner, OSS Document Scanner), inventory tags (InvScan), textures (TM 26), or handwritten notes (xnotes).
-- Self-hosted open-source solutions require proper app installation from F-Droid or GitHub Releases, and awareness that some apps require companion servers (InvScan, Open Foris Arena) or native library setup (OSS Document Scanner) for full functionality.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" ></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Mobile-Asset-Capture/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Mobile-Asset-Capture?style=flat-square&logo=github&color=gold" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Mobile-Asset-Capture/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Mobile-Asset-Capture?style=flat-square&logo=github&color=blue" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Mobile-Asset-Capture/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Mobile-Asset-Capture?style=flat-square&color=orange" alt="Issues"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Mobile-Asset-Capture/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-success?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Mobile-Asset-Capture/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square" alt="PRs Welcome"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
-**Made for mobile users, field workers, inventory managers, and 3D artists choosing asset capture tools that respect their data and workflow.**
-Let's make mobile asset capture more open, on-device, and privacy-respecting.
+# 📱 Awesome Mobile Asset Capture
+
+> **A curated catalog of premier SaaS platforms, enterprise SDKs, and open-source tools for mobile digitization, edge OCR, barcode asset tracking, geospatial mapping, and 3D material capture.**
+
+Welcome to the definitive developer and practitioner directory for **Mobile Asset Capture**. Mobile asset capture transforms everyday smartphone camera sensors into sophisticated edge scanning stations. Whether digitizing fragile physical documents with sub-millimeter perspective correction, cataloging warehouse inventory with barcode and computer vision OCR, mapping geographic assets in the field, or capturing real-world physical surfaces into 3D PBR materials — this resource highlights both commercial SaaS leaders and privacy-first, on-device open-source solutions.
+
+---
+
+## 📑 Table of Contents
+
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [💼 SaaS & Enterprise Platforms](#-saas--enterprise-platforms)
+  - [📊 SaaS Comparison Matrix](#-saas-comparison-matrix)
+  - [🔍 Detailed SaaS Profiles](#-detailed-saas-profiles)
+- [💻 Open-Source Projects & Toolkits](#-open-source-projects--toolkits)
+  - [🏆 Open-Source Repositories (Ranked by Stars)](#-open-source-repositories-ranked-by-stars)
+  - [📦 Deep Dive into Notable Open-Source Solutions](#-deep-dive-into-notable-open-source-solutions)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [☕ Support](#-support)
+- [📈 Star History](#-star-history)
+- [⚖️ Disclaimer](#-disclaimer)
+
+---
+
+## 🌐 Sector Overview & Market Dynamics
+
+The global **Mobile Document Scanning & Mobile Asset Capture Market** is estimated at **$4.8 billion in 2024–2026** and is projected to expand to **$11.2 billion by 2032**, demonstrating a compound annual growth rate (**CAGR**) of approximately **12.4%**. This rapid expansion is accelerated by the mainstreaming of neural edge-processing units (NPUs) on modern smartphones, offline optical character recognition (OCR) models, computer vision barcode decoders, and distributed inventory workflows.
+
+### Market Fragmentation vs. Concentration
+- **Document & Office Productivity**: **Moderately Concentrated** — Tech giants such as Microsoft (Microsoft 365 / Lens) and Adobe (Creative Cloud / Adobe Capture & Scan) command substantial market share through enterprise software ecosystem bundling and deep cloud storage hooks.
+- **Vertical Asset Capture (Inventory, 3D, Field GIS)**: **Highly Fragmented** — Across barcode-driven warehouse asset tracking, spatial photogrammetry, and field survey collection, the landscape consists of specialized high-ticket enterprise vendors (Scandit, Matterport) coexisting alongside an agile, privacy-conscious open-source community dedicated to 100% offline and self-hosted execution.
+
+---
+
+## 💼 SaaS & Enterprise Platforms
+
+Leading commercial services and enterprise platforms sorted by company scale (market capitalization and valuation).
+
+### 📊 SaaS Comparison Matrix
+
+| 🏢 Platform | 🎯 Primary Focus | 💰 Company Valuation / Scale | 🏷️ Starting Tier Price | 🎁 Free Tier Limit / Trial |
+| :--- | :--- | :--- | :--- | :--- |
+| [**Microsoft Lens**](https://www.microsoft.com/en-us/microsoft-365/mobile/microsoft-lens-mobile-app) | Document, whiteboard & business card OCR scanning into Microsoft 365 | **~$3.12 Trillion** *(Market Cap)* | **$6.99 / month** *(Microsoft 365 Personal)* | **Free forever**: Unlimited camera scanning with free Microsoft Account; includes 5 GB OneDrive cloud storage |
+| [**Adobe Capture**](https://www.adobe.com/products/capture.html) | Physical texture to 3D PBR maps, vector shapes, color themes & SVG assets | **~$215 Billion** *(Market Cap)* | **$9.99 / month** *(Creative Cloud Single App)* | **Free forever**: Unlimited camera asset generation with free Adobe ID; includes 2 GB Creative Cloud storage |
+| [**Matterport Capture**](https://matterport.com/) | 3D digital twin, LiDAR spatial capture & physical property modeling | **~$1.60 Billion** *(Acquired by CoStar Group, ~$32B Cap)* | **$9.99 / month** *(Starter Plan, billed annually)* | **Free forever**: 1 active spatial digital twin, 1 user seat, mobile phone LiDAR & camera capture |
+| [**Scandit Data Capture**](https://www.scandit.com/) | High-speed enterprise smart barcode, MatrixScan & package tracking SDK | **~$1.00 Billion** *(Valuation, Series D Unicorn)* | **$199.00 / month** *(Essential Plan for up to 50 active devices)* | **30-day free trial**: Complete access to Barcode Scanner SDK, MatrixScan AR, and testable on up to 100 devices |
+| [**CamScanner**](https://www.camscanner.com/) | Bulk document scanning, multi-page PDF generation & cloud OCR | **~$1.00 Billion** *(Valuation, INTSIG Information Co.)* | **$4.99 / month** *(or $49.99 / year for Premium)* | **Free forever**: Unlimited scans with "Scanned with CamScanner" watermark on exports, 200 MB cloud storage |
+| [**Genius Scan**](https://thegrizzlylabs.com/genius-scan) | Privacy-oriented document scanning with on-device border detection & OCR | **~$5.00 Million** *(Est. Annual Revenue, The Grizzly Labs)* | **$2.99 / month** *(Genius Cloud) or $4.99 one-time (Genius Scan+)* | **Free forever**: Unlimited document scanning, auto-edge detection, multi-page PDF/JPG export; no cloud sync/OCR |
+
+---
+
+### 🔍 Detailed SaaS Profiles
+
+#### 1. 📄 [Microsoft Lens](https://www.microsoft.com/en-us/microsoft-365/mobile/microsoft-lens-mobile-app)
+- **Overview**: Formerly Office Lens, this mobile utility trims, enhances, and renders photos of whiteboards and physical documents into editable Word, PowerPoint, and PDF files.
+- **Key Features**: Optical character recognition, business card contact extraction into Outlook, table detection into Excel, and Immersive Reader integration.
+- **Ecosystem Fit**: Optimal for organizations and individuals embedded in Microsoft 365 and OneDrive environments.
+- **Trade-offs**: Cloud sync requires a Microsoft account; best functionality relies on Office 365 subscription tiers.
+
+#### 2. 🎨 [Adobe Capture](https://www.adobe.com/products/capture.html)
+- **Overview**: The creative industry benchmark for converting smartphone camera feeds into digital graphic design assets.
+- **Key Features**: Auto-extracts color themes, generates scalable vector curves (SVG), synthesizes seamless tiling PBR materials (normal, roughness, metallic), and captures typography fonts.
+- **Ecosystem Fit**: Creative professionals, 3D modelers, and graphic artists operating in Adobe Illustrator, Photoshop, and Substance 3D.
+- **Trade-offs**: Proprietary output formats tightly bound to Adobe Creative Cloud ecosystem; requires Adobe login.
+
+#### 3. 🏠 [Matterport Capture](https://matterport.com/)
+- **Overview**: Turns iPhones and Android smartphones into spatial asset capture units, capturing full 3D panoramic walkthroughs and volumetric meshes using standard cameras or built-in LiDAR sensors.
+- **Key Features**: Cortex AI automated mesh generation, spatial dimension measurement, architectural floor plans, and interactive virtual staging.
+- **Ecosystem Fit**: Real estate brokers, facility operations managers, insurance assessors, and construction site documentation.
+- **Trade-offs**: High bandwidth usage; 3D spaces are hosted within Matterport's proprietary cloud viewer.
+
+#### 4. 📦 [Scandit Barcode & Data Capture](https://www.scandit.com/)
+- **Overview**: Industrial-grade smart device computer vision SDK engineered to scan worn, torn, low-light, or distant barcodes instantly.
+- **Key Features**: MatrixScan AR (simultaneous multi-barcode capture and augmented reality overlay), ID badge scanning, and tire serial number recognition.
+- **Ecosystem Fit**: Logistics hubs, retail inventory audits, delivery couriers, and hospital medication verification.
+- **Trade-offs**: Enterprise-targeted pricing with premium SDK licensing fees.
+
+#### 5. 📑 [CamScanner](https://www.camscanner.com/)
+- **Overview**: Pioneer mobile document scanning application delivering automatic page edge rectification, contrast enhancement filters, and cloud OCR text extraction.
+- **Key Features**: ID card duplication mode, electronic signatures, multi-format export (PDF, Word, TXT), and team collaboration folders.
+- **Ecosystem Fit**: High-frequency casual scanning, student study notes, and everyday receipt archiving.
+- **Trade-offs**: Free plan embeds branding watermark on exported PDFs; historical privacy concerns have spurred adoption of open-source alternatives.
+
+#### 6. ⚡ [Genius Scan](https://thegrizzlylabs.com/genius-scan)
+- **Overview**: Engineered by The Grizzly Labs with an explicit on-device architecture ethos, providing ultra-fast page capture without compulsory cloud logins.
+- **Key Features**: Real-time border detection, distortion and curvature correction, offline Tesseract-based OCR, and custom smart document renaming workflows.
+- **Ecosystem Fit**: Privacy-conscious business professionals who prioritize speed, clean PDF exports, and self-hosted WebDAV/cloud backup integrations.
+- **Trade-offs**: Free tier omits cloud synchronization and automated cloud folder uploads.
+
+---
+
+## 💻 Open-Source Projects & Toolkits
+
+A comprehensive collection of open-source mobile capture applications, SDKs, and toolkits for offline processing, self-hosted infrastructure, and privacy-respecting workflows.
+
+### 🏆 Open-Source Repositories (Ranked by Stars)
+
+| 🌟 Repository & Project | 🏷️ Category | ⚙️ Tech Stack | 📜 License | 🔗 Stargazers Badge |
+| :--- | :--- | :--- | :--- | :--- |
+| [**journeyapps/zxing-android-embedded**](https://github.com/journeyapps/zxing-android-embedded) | Mobile Barcode & Asset Scanner | Java / Android | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/journeyapps/zxing-android-embedded?style=social&color=white)](https://github.com/journeyapps/zxing-android-embedded/stargazers) |
+| [**dm77/barcodescanner**](https://github.com/dm77/barcodescanner) | Barcode & QR Asset Scanner View | Java / Android | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/dm77/barcodescanner?style=social&color=white)](https://github.com/dm77/barcodescanner/stargazers) |
+| [**introlab/rtabmap**](https://github.com/introlab/rtabmap) | 3D Spatial SLAM & Mobile Asset Mapping | C++ / ROS / Android ARCore | BSD-3-Clause | [![GitHub stars](https://img.shields.io/github/stars/introlab/rtabmap?style=social&color=white)](https://github.com/introlab/rtabmap/stargazers) |
+| [**ossappscollective/OSS-DocumentScanner**](https://github.com/ossappscollective/OSS-DocumentScanner) | Android Document Scanner with OCR | Kotlin / OpenCV / Tesseract | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/ossappscollective/OSS-DocumentScanner?style=social&color=white)](https://github.com/ossappscollective/OSS-DocumentScanner/stargazers) |
+| [**ethereal-developers/OpenScan**](https://github.com/ethereal-developers/OpenScan) | Privacy-First Mobile Scanner | Dart / Flutter | GPL-3.0 | [![GitHub stars](https://img.shields.io/github/stars/ethereal-developers/OpenScan?style=social&color=white)](https://github.com/ethereal-developers/OpenScan/stargazers) |
+| [**allgood/OpenNoteScanner**](https://github.com/allgood/OpenNoteScanner) | Minimalist OpenCV Document Scanner | Java / Android / OpenCV | MIT | [![GitHub stars](https://img.shields.io/github/stars/allgood/OpenNoteScanner?style=social&color=white)](https://github.com/allgood/OpenNoteScanner/stargazers) |
+| [**astubenbord/paperless-mobile**](https://github.com/astubenbord/paperless-mobile) | Self-Hosted Paperless Document Capture | Dart / Flutter | GPL-3.0 | [![GitHub stars](https://img.shields.io/github/stars/astubenbord/paperless-mobile?style=social&color=white)](https://github.com/astubenbord/paperless-mobile/stargazers) |
+| [**opengisch/QField**](https://github.com/opengisch/QField) | Mobile GIS & Field Asset Collection | C++ / QML / Qt | GPL-2.0 | [![GitHub stars](https://img.shields.io/github/stars/opengisch/QField?style=social&color=white)](https://github.com/opengisch/QField/stargazers) |
+| [**pencilresearch/OpenScanner**](https://github.com/pencilresearch/OpenScanner) | iOS Document & Receipt Scanner | Swift / VisionKit | MIT | [![GitHub stars](https://img.shields.io/github/stars/pencilresearch/OpenScanner?style=social&color=white)](https://github.com/pencilresearch/OpenScanner/stargazers) |
+| [**OpenScanEu/OpenScan**](https://github.com/OpenScanEu/OpenScan) | Open 3D Physical Photogrammetry | Python / Raspberry Pi / Mobile Web | GPL-3.0 | [![GitHub stars](https://img.shields.io/github/stars/OpenScanEu/OpenScan?style=social&color=white)](https://github.com/OpenScanEu/OpenScan/stargazers) |
+| [**getodk/collect**](https://github.com/getodk/collect) | Field Survey & Geo-Asset Data Collection | Java / Kotlin / Android | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/getodk/collect?style=social&color=white)](https://github.com/getodk/collect/stargazers) |
+| [**mayuce/AndroidDocumentScanner**](https://github.com/mayuce/AndroidDocumentScanner) | CamScanner-Style Edge Detection SDK | Kotlin / OpenCV | MIT | [![GitHub stars](https://img.shields.io/github/stars/mayuce/AndroidDocumentScanner?style=social&color=white)](https://github.com/mayuce/AndroidDocumentScanner/stargazers) |
+| [**MerginMaps/mobile**](https://github.com/MerginMaps/mobile) | Offline Mobile Field Asset Surveying | C++ / QML / QGIS Core | GPL-2.0 | [![GitHub stars](https://img.shields.io/github/stars/MerginMaps/mobile?style=social&color=white)](https://github.com/MerginMaps/mobile/stargazers) |
+| [**shardulvs/xnotes-android**](https://github.com/shardulvs/xnotes-android) | Stylus Handwriting & Vector PDF Capture | Kotlin / Jetpack Compose | MIT | [![GitHub stars](https://img.shields.io/github/stars/shardulvs/xnotes-android?style=social&color=white)](https://github.com/shardulvs/xnotes-android/stargazers) |
+| [**inventree/inventree-app**](https://github.com/inventree/inventree-app) | Open Inventory & Barcode Asset Tracking | Dart / Flutter | MIT | [![GitHub stars](https://img.shields.io/github/stars/inventree/inventree-app?style=social&color=white)](https://github.com/inventree/inventree-app/stargazers) |
+| [**mapilio/mapilio-kit**](https://github.com/mapilio/mapilio-kit) | Street-Level Geospatial Imagery Capture | Python / CLI / Mobile | MIT | [![GitHub stars](https://img.shields.io/github/stars/mapilio/mapilio-kit?style=social&color=white)](https://github.com/mapilio/mapilio-kit/stargazers) |
+| [**openforis/arena-mobile**](https://github.com/openforis/arena-mobile) | Offline Natural Resource & Inventory Survey | JavaScript / React Native | MIT | [![GitHub stars](https://img.shields.io/github/stars/openforis/arena-mobile?style=social&color=white)](https://github.com/openforis/arena-mobile/stargazers) |
+| [**deavers/InvScan**](https://github.com/deavers/InvScan) | Android Inventory Tag ML Kit Scanner | Kotlin / Google ML Kit | MIT | [![GitHub stars](https://img.shields.io/github/stars/deavers/InvScan?style=social&color=white)](https://github.com/deavers/InvScan/stargazers) |
+
+---
+
+### 📦 Deep Dive into Notable Open-Source Solutions
+
+#### 1. 🔍 [journeyapps/zxing-android-embedded](https://github.com/journeyapps/zxing-android-embedded) [![GitHub stars](https://img.shields.io/github/stars/journeyapps/zxing-android-embedded?style=social&color=white)](https://github.com/journeyapps/zxing-android-embedded/stargazers)
+- **Role**: The ubiquitous barcode and QR code capture engine for native Android applications.
+- **Highlights**: Wrapped around ZXing ("Zebra Crossing"), provides ready-to-use continuous scanning fragments, flashlight control, and customizable viewfinder overlays.
+- **Best For**: Native Android engineers embedding robust 1D/2D asset and inventory tracking.
+
+#### 2. 🗺️ [introlab/rtabmap](https://github.com/introlab/rtabmap) [![GitHub stars](https://img.shields.io/github/stars/introlab/rtabmap?style=social&color=white)](https://github.com/introlab/rtabmap/stargazers)
+- **Role**: Real-Time Appearance-Based 3D Mapping for mobile RGB-D cameras and ARCore-enabled devices.
+- **Highlights**: Loop closure detection with memory management approach for large-scale physical asset mapping, spatial point clouds, and mesh reconstructions.
+- **Best For**: Robotics researchers, indoor navigation builders, and spatial computing developers.
+
+#### 3. 📄 [ossappscollective/OSS-DocumentScanner](https://github.com/ossappscollective/OSS-DocumentScanner) [![GitHub stars](https://img.shields.io/github/stars/ossappscollective/OSS-DocumentScanner?style=social&color=white)](https://github.com/ossappscollective/OSS-DocumentScanner/stargazers)
+- **Role**: Modern Material You Android scanning app with local OCR and multi-cloud sync.
+- **Highlights**: Automatic border detection, batch page scanning, on-device offline Tesseract OCR text layer generation, password-protected PDF exports, and sync with Nextcloud/WebDAV/Google Drive.
+- **Best For**: Privacy enthusiasts wanting a feature-complete alternative to commercial document scanners.
+
+#### 4. 🛡️ [ethereal-developers/OpenScan](https://github.com/ethereal-developers/OpenScan) [![GitHub stars](https://img.shields.io/github/stars/ethereal-developers/OpenScan?style=social&color=white)](https://github.com/ethereal-developers/OpenScan/stargazers)
+- **Role**: Flutter-powered cross-platform document scanner emphasizing strict zero-telemetry.
+- **Highlights**: Fast edge detection, custom color filters, offline OCR, zero network permissions required, and local encrypted document storage.
+- **Best For**: Users seeking a lightweight, ad-free, completely isolated document scanner.
+
+#### 5. 🗄️ [astubenbord/paperless-mobile](https://github.com/astubenbord/paperless-mobile) [![GitHub stars](https://img.shields.io/github/stars/astubenbord/paperless-mobile?style=social&color=white)](https://github.com/astubenbord/paperless-mobile/stargazers)
+- **Role**: Companion mobile capture client for self-hosted [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) instances.
+- **Highlights**: In-app camera scanner with automatic cropping, tag and correspondent assignment, full-text search across scanned documents, and background API sync.
+- **Best For**: Self-hosters archiving paper mail, bills, and tax documents directly to their home server.
+
+#### 6. 🌐 [opengisch/QField](https://github.com/opengisch/QField) [![GitHub stars](https://img.shields.io/github/stars/opengisch/QField?style=social&color=white)](https://github.com/opengisch/QField/stargazers)
+- **Role**: Mobile GIS field data and asset capture tool integrated with QGIS.
+- **Highlights**: Touch-optimized interface, GNSS positioning, camera integration for spatial photo attachments, offline vector editing, and seamless cloud synchronization.
+- **Best For**: Environmental surveyors, municipal infrastructure auditors, and utility asset managers.
+
+#### 7. 🍎 [pencilresearch/OpenScanner](https://github.com/pencilresearch/OpenScanner) [![GitHub stars](https://img.shields.io/github/stars/pencilresearch/OpenScanner?style=social&color=white)](https://github.com/pencilresearch/OpenScanner/stargazers)
+- **Role**: Swift-native open-source document scanning app for iOS.
+- **Highlights**: Uses Apple's VisionKit framework for real-time document edge snapping, perspective correction, on-device OCR, and native PDF generation with zero third-party dependencies.
+- **Best For**: iOS users looking for a clean, open, and lightweight alternative to commercial scanning apps.
+
+#### 8. 📐 [OpenScanEu/OpenScan](https://github.com/OpenScanEu/OpenScan) [![GitHub stars](https://img.shields.io/github/stars/OpenScanEu/OpenScan?style=social&color=white)](https://github.com/OpenScanEu/OpenScan/stargazers)
+- **Role**: Hardware and software design for physical 3D asset scanning and photogrammetry.
+- **Highlights**: Automated turntable and ring-light rig controlling mobile phone and Raspberry Pi cameras for capturing 360-degree point clouds and texture maps.
+- **Best For**: 3D hobbyists, tabletop miniature sculptors, and archaeological preservationists.
+
+#### 9. 📋 [getodk/collect](https://github.com/getodk/collect) [![GitHub stars](https://img.shields.io/github/stars/getodk/collect?style=social&color=white)](https://github.com/getodk/collect/stargazers)
+- **Role**: Industrial field data collection Android app used by NGOs, humanitarian teams, and researchers worldwide.
+- **Highlights**: Handles complex survey logic, GPS coordinates, barcode scanning, photo evidence capture, audio recordings, and offline form caching.
+- **Best For**: Global health field teams, environmental monitoring, and large-scale asset inspections.
+
+#### 10. 🏷️ [inventree/inventree-app](https://github.com/inventree/inventree-app) [![GitHub stars](https://img.shields.io/github/stars/inventree/inventree-app?style=social&color=white)](https://github.com/inventree/inventree-app/stargazers)
+- **Role**: Official mobile client for InvenTree, the open-source inventory and asset management system.
+- **Highlights**: Barcode and QR code scanning for parts, locations, and purchase orders; serial number verification; and stock level adjustments directly from mobile devices.
+- **Best For**: Electronics labs, hardware manufacturing workshops, and stockroom managers.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions from the developer, open-source, and asset capture community are warmly welcomed!
+
+1. 🍴 **Fork the Repository**: Click the `Fork` button at the top right of this repo.
+2. 🌿 **Create a Feature Branch**:
+   ```bash
+   git checkout -b feature/add-new-capture-tool
+   ```
+3. 📝 **Add Your Entry**:
+   - Maintain chronological sorting where applicable (SaaS sorted by scale, Open Source sorted by GitHub stars).
+   - Provide concrete, verified information (exact pricing tiers, free plan boundaries, repo link, and license).
+   - Avoid marketing buzzwords; emphasize technical architecture and factual trade-offs.
+4. 🧪 **Validate Formatting**: Ensure markdown tables and link anchors resolve cleanly.
+5. 🚀 **Submit a Pull Request**: Provide a clear PR description highlighting why the project is relevant to mobile asset capture.
+
+---
+
+## ☕ Support
+
+If you find **Awesome Mobile Asset Capture** valuable for your projects, research, or daily workflows, please consider supporting the project:
+
+- ⭐ **Star this repository** to improve its visibility for other developers and practitioners.
+- 🍴 **Fork and share** it with colleagues, community groups, and mobile capture teams.
+- 💡 **Open an issue or PR** to suggest new tools, corrections, or architecture updates.
+- ☕ **Support continuous maintenance & open research**:
+  
+  [![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-%E2%99%A5-ff69b4?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/ishandutta2007)
+
+*Thank you for supporting open documentation and privacy-first digital asset capture!*
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Mobile-Asset-Capture&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Mobile-Asset-Capture&type=date&legend=top-left)
+
+---
+
+## ⚖️ Disclaimer
+
+> [!NOTE]
+> - This repository is a community-curated technical directory assembled for informational, educational, and developer evaluation purposes. Inclusion does not imply official endorsement or commercial sponsorship.
+> - Product specifications, licensing terms, and SaaS pricing tiers change over time. Always verify current commercial terms on vendors' official websites.
+> - Mobile asset capture tools vary widely in computational architecture. Cloud-first tools (e.g., Adobe Capture, CamScanner) transmit visual data to remote infrastructure; on-device solutions (e.g., OSS Document Scanner, OpenScan, QField) keep processing entirely on-device, preserving end-user privacy.
