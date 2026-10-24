@@ -114,75 +114,75 @@ A comprehensive collection of open-source mobile capture applications, SDKs, and
 
 | 🌟 Repository & Project | 🏷️ Category | ⚙️ Tech Stack | 📜 License | 🔗 Stargazers Badge |
 | :--- | :--- | :--- | :--- | :--- |
-| [**journeyapps/zxing-android-embedded**](https://github.com/journeyapps/zxing-android-embedded) | Mobile Barcode & Asset Scanner | Java / Android | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/journeyapps/zxing-android-embedded?style=social&color=white)](https://github.com/journeyapps/zxing-android-embedded/stargazers) |
-| [**dm77/barcodescanner**](https://github.com/dm77/barcodescanner) | Barcode & QR Asset Scanner View | Java / Android | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/dm77/barcodescanner?style=social&color=white)](https://github.com/dm77/barcodescanner/stargazers) |
-| [**introlab/rtabmap**](https://github.com/introlab/rtabmap) | 3D Spatial SLAM & Mobile Asset Mapping | C++ / ROS / Android ARCore | BSD-3-Clause | [![GitHub stars](https://img.shields.io/github/stars/introlab/rtabmap?style=social&color=white)](https://github.com/introlab/rtabmap/stargazers) |
-| [**ossappscollective/OSS-DocumentScanner**](https://github.com/ossappscollective/OSS-DocumentScanner) | Android Document Scanner with OCR | Kotlin / OpenCV / Tesseract | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/ossappscollective/OSS-DocumentScanner?style=social&color=white)](https://github.com/ossappscollective/OSS-DocumentScanner/stargazers) |
-| [**ethereal-developers/OpenScan**](https://github.com/ethereal-developers/OpenScan) | Privacy-First Mobile Scanner | Dart / Flutter | GPL-3.0 | [![GitHub stars](https://img.shields.io/github/stars/ethereal-developers/OpenScan?style=social&color=white)](https://github.com/ethereal-developers/OpenScan/stargazers) |
-| [**allgood/OpenNoteScanner**](https://github.com/allgood/OpenNoteScanner) | Minimalist OpenCV Document Scanner | Java / Android / OpenCV | MIT | [![GitHub stars](https://img.shields.io/github/stars/allgood/OpenNoteScanner?style=social&color=white)](https://github.com/allgood/OpenNoteScanner/stargazers) |
-| [**astubenbord/paperless-mobile**](https://github.com/astubenbord/paperless-mobile) | Self-Hosted Paperless Document Capture | Dart / Flutter | GPL-3.0 | [![GitHub stars](https://img.shields.io/github/stars/astubenbord/paperless-mobile?style=social&color=white)](https://github.com/astubenbord/paperless-mobile/stargazers) |
-| [**opengisch/QField**](https://github.com/opengisch/QField) | Mobile GIS & Field Asset Collection | C++ / QML / Qt | GPL-2.0 | [![GitHub stars](https://img.shields.io/github/stars/opengisch/QField?style=social&color=white)](https://github.com/opengisch/QField/stargazers) |
-| [**pencilresearch/OpenScanner**](https://github.com/pencilresearch/OpenScanner) | iOS Document & Receipt Scanner | Swift / VisionKit | MIT | [![GitHub stars](https://img.shields.io/github/stars/pencilresearch/OpenScanner?style=social&color=white)](https://github.com/pencilresearch/OpenScanner/stargazers) |
-| [**OpenScanEu/OpenScan**](https://github.com/OpenScanEu/OpenScan) | Open 3D Physical Photogrammetry | Python / Raspberry Pi / Mobile Web | GPL-3.0 | [![GitHub stars](https://img.shields.io/github/stars/OpenScanEu/OpenScan?style=social&color=white)](https://github.com/OpenScanEu/OpenScan/stargazers) |
-| [**getodk/collect**](https://github.com/getodk/collect) | Field Survey & Geo-Asset Data Collection | Java / Kotlin / Android | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/getodk/collect?style=social&color=white)](https://github.com/getodk/collect/stargazers) |
-| [**mayuce/AndroidDocumentScanner**](https://github.com/mayuce/AndroidDocumentScanner) | CamScanner-Style Edge Detection SDK | Kotlin / OpenCV | MIT | [![GitHub stars](https://img.shields.io/github/stars/mayuce/AndroidDocumentScanner?style=social&color=white)](https://github.com/mayuce/AndroidDocumentScanner/stargazers) |
-| [**MerginMaps/mobile**](https://github.com/MerginMaps/mobile) | Offline Mobile Field Asset Surveying | C++ / QML / QGIS Core | GPL-2.0 | [![GitHub stars](https://img.shields.io/github/stars/MerginMaps/mobile?style=social&color=white)](https://github.com/MerginMaps/mobile/stargazers) |
-| [**shardulvs/xnotes-android**](https://github.com/shardulvs/xnotes-android) | Stylus Handwriting & Vector PDF Capture | Kotlin / Jetpack Compose | MIT | [![GitHub stars](https://img.shields.io/github/stars/shardulvs/xnotes-android?style=social&color=white)](https://github.com/shardulvs/xnotes-android/stargazers) |
-| [**inventree/inventree-app**](https://github.com/inventree/inventree-app) | Open Inventory & Barcode Asset Tracking | Dart / Flutter | MIT | [![GitHub stars](https://img.shields.io/github/stars/inventree/inventree-app?style=social&color=white)](https://github.com/inventree/inventree-app/stargazers) |
-| [**mapilio/mapilio-kit**](https://github.com/mapilio/mapilio-kit) | Street-Level Geospatial Imagery Capture | Python / CLI / Mobile | MIT | [![GitHub stars](https://img.shields.io/github/stars/mapilio/mapilio-kit?style=social&color=white)](https://github.com/mapilio/mapilio-kit/stargazers) |
-| [**openforis/arena-mobile**](https://github.com/openforis/arena-mobile) | Offline Natural Resource & Inventory Survey | JavaScript / React Native | MIT | [![GitHub stars](https://img.shields.io/github/stars/openforis/arena-mobile?style=social&color=white)](https://github.com/openforis/arena-mobile/stargazers) |
-| [**deavers/InvScan**](https://github.com/deavers/InvScan) | Android Inventory Tag ML Kit Scanner | Kotlin / Google ML Kit | MIT | [![GitHub stars](https://img.shields.io/github/stars/deavers/InvScan?style=social&color=white)](https://github.com/deavers/InvScan/stargazers) |
+| [**journeyapps/zxing-android-embedded**](https://github.com/journeyapps/zxing-android-embedded) | Mobile Barcode & Asset Scanner | Java / Android | Apache-2.0 | [![GitHub_Stars](https://img.shields.io/github/stars/journeyapps/zxing-android-embedded?style=social&color=white)](https://github.com/journeyapps/zxing-android-embedded/stargazers) |
+| [**dm77/barcodescanner**](https://github.com/dm77/barcodescanner) | Barcode & QR Asset Scanner View | Java / Android | Apache-2.0 | [![GitHub_Stars](https://img.shields.io/github/stars/dm77/barcodescanner?style=social&color=white)](https://github.com/dm77/barcodescanner/stargazers) |
+| [**introlab/rtabmap**](https://github.com/introlab/rtabmap) | 3D Spatial SLAM & Mobile Asset Mapping | C++ / ROS / Android ARCore | BSD-3-Clause | [![GitHub_Stars](https://img.shields.io/github/stars/introlab/rtabmap?style=social&color=white)](https://github.com/introlab/rtabmap/stargazers) |
+| [**ossappscollective/OSS-DocumentScanner**](https://github.com/ossappscollective/OSS-DocumentScanner) | Android Document Scanner with OCR | Kotlin / OpenCV / Tesseract | Apache-2.0 | [![GitHub_Stars](https://img.shields.io/github/stars/ossappscollective/OSS-DocumentScanner?style=social&color=white)](https://github.com/ossappscollective/OSS-DocumentScanner/stargazers) |
+| [**ethereal-developers/OpenScan**](https://github.com/ethereal-developers/OpenScan) | Privacy-First Mobile Scanner | Dart / Flutter | GPL-3.0 | [![GitHub_Stars](https://img.shields.io/github/stars/ethereal-developers/OpenScan?style=social&color=white)](https://github.com/ethereal-developers/OpenScan/stargazers) |
+| [**allgood/OpenNoteScanner**](https://github.com/allgood/OpenNoteScanner) | Minimalist OpenCV Document Scanner | Java / Android / OpenCV | MIT | [![GitHub_Stars](https://img.shields.io/github/stars/allgood/OpenNoteScanner?style=social&color=white)](https://github.com/allgood/OpenNoteScanner/stargazers) |
+| [**astubenbord/paperless-mobile**](https://github.com/astubenbord/paperless-mobile) | Self-Hosted Paperless Document Capture | Dart / Flutter | GPL-3.0 | [![GitHub_Stars](https://img.shields.io/github/stars/astubenbord/paperless-mobile?style=social&color=white)](https://github.com/astubenbord/paperless-mobile/stargazers) |
+| [**opengisch/QField**](https://github.com/opengisch/QField) | Mobile GIS & Field Asset Collection | C++ / QML / Qt | GPL-2.0 | [![GitHub_Stars](https://img.shields.io/github/stars/opengisch/QField?style=social&color=white)](https://github.com/opengisch/QField/stargazers) |
+| [**pencilresearch/OpenScanner**](https://github.com/pencilresearch/OpenScanner) | iOS Document & Receipt Scanner | Swift / VisionKit | MIT | [![GitHub_Stars](https://img.shields.io/github/stars/pencilresearch/OpenScanner?style=social&color=white)](https://github.com/pencilresearch/OpenScanner/stargazers) |
+| [**OpenScanEu/OpenScan**](https://github.com/OpenScanEu/OpenScan) | Open 3D Physical Photogrammetry | Python / Raspberry Pi / Mobile Web | GPL-3.0 | [![GitHub_Stars](https://img.shields.io/github/stars/OpenScanEu/OpenScan?style=social&color=white)](https://github.com/OpenScanEu/OpenScan/stargazers) |
+| [**getodk/collect**](https://github.com/getodk/collect) | Field Survey & Geo-Asset Data Collection | Java / Kotlin / Android | Apache-2.0 | [![GitHub_Stars](https://img.shields.io/github/stars/getodk/collect?style=social&color=white)](https://github.com/getodk/collect/stargazers) |
+| [**mayuce/AndroidDocumentScanner**](https://github.com/mayuce/AndroidDocumentScanner) | CamScanner-Style Edge Detection SDK | Kotlin / OpenCV | MIT | [![GitHub_Stars](https://img.shields.io/github/stars/mayuce/AndroidDocumentScanner?style=social&color=white)](https://github.com/mayuce/AndroidDocumentScanner/stargazers) |
+| [**MerginMaps/mobile**](https://github.com/MerginMaps/mobile) | Offline Mobile Field Asset Surveying | C++ / QML / QGIS Core | GPL-2.0 | [![GitHub_Stars](https://img.shields.io/github/stars/MerginMaps/mobile?style=social&color=white)](https://github.com/MerginMaps/mobile/stargazers) |
+| [**shardulvs/xnotes-android**](https://github.com/shardulvs/xnotes-android) | Stylus Handwriting & Vector PDF Capture | Kotlin / Jetpack Compose | MIT | [![GitHub_Stars](https://img.shields.io/github/stars/shardulvs/xnotes-android?style=social&color=white)](https://github.com/shardulvs/xnotes-android/stargazers) |
+| [**inventree/inventree-app**](https://github.com/inventree/inventree-app) | Open Inventory & Barcode Asset Tracking | Dart / Flutter | MIT | [![GitHub_Stars](https://img.shields.io/github/stars/inventree/inventree-app?style=social&color=white)](https://github.com/inventree/inventree-app/stargazers) |
+| [**mapilio/mapilio-kit**](https://github.com/mapilio/mapilio-kit) | Street-Level Geospatial Imagery Capture | Python / CLI / Mobile | MIT | [![GitHub_Stars](https://img.shields.io/github/stars/mapilio/mapilio-kit?style=social&color=white)](https://github.com/mapilio/mapilio-kit/stargazers) |
+| [**openforis/arena-mobile**](https://github.com/openforis/arena-mobile) | Offline Natural Resource & Inventory Survey | JavaScript / React Native | MIT | [![GitHub_Stars](https://img.shields.io/github/stars/openforis/arena-mobile?style=social&color=white)](https://github.com/openforis/arena-mobile/stargazers) |
+| [**deavers/InvScan**](https://github.com/deavers/InvScan) | Android Inventory Tag ML Kit Scanner | Kotlin / Google ML Kit | MIT | [![GitHub_Stars](https://img.shields.io/github/stars/deavers/InvScan?style=social&color=white)](https://github.com/deavers/InvScan/stargazers) |
 
 ---
 
 ### 📦 Deep Dive into Notable Open-Source Solutions
 
-#### 1. 🔍 [journeyapps/zxing-android-embedded](https://github.com/journeyapps/zxing-android-embedded) [![GitHub stars](https://img.shields.io/github/stars/journeyapps/zxing-android-embedded?style=social&color=white)](https://github.com/journeyapps/zxing-android-embedded/stargazers)
+#### 1. 🔍 [journeyapps/zxing-android-embedded](https://github.com/journeyapps/zxing-android-embedded) [![GitHub_Stars](https://img.shields.io/github/stars/journeyapps/zxing-android-embedded?style=social&color=white)](https://github.com/journeyapps/zxing-android-embedded/stargazers)
 - **Role**: The ubiquitous barcode and QR code capture engine for native Android applications.
 - **Highlights**: Wrapped around ZXing ("Zebra Crossing"), provides ready-to-use continuous scanning fragments, flashlight control, and customizable viewfinder overlays.
 - **Best For**: Native Android engineers embedding robust 1D/2D asset and inventory tracking.
 
-#### 2. 🗺️ [introlab/rtabmap](https://github.com/introlab/rtabmap) [![GitHub stars](https://img.shields.io/github/stars/introlab/rtabmap?style=social&color=white)](https://github.com/introlab/rtabmap/stargazers)
+#### 2. 🗺️ [introlab/rtabmap](https://github.com/introlab/rtabmap) [![GitHub_Stars](https://img.shields.io/github/stars/introlab/rtabmap?style=social&color=white)](https://github.com/introlab/rtabmap/stargazers)
 - **Role**: Real-Time Appearance-Based 3D Mapping for mobile RGB-D cameras and ARCore-enabled devices.
 - **Highlights**: Loop closure detection with memory management approach for large-scale physical asset mapping, spatial point clouds, and mesh reconstructions.
 - **Best For**: Robotics researchers, indoor navigation builders, and spatial computing developers.
 
-#### 3. 📄 [ossappscollective/OSS-DocumentScanner](https://github.com/ossappscollective/OSS-DocumentScanner) [![GitHub stars](https://img.shields.io/github/stars/ossappscollective/OSS-DocumentScanner?style=social&color=white)](https://github.com/ossappscollective/OSS-DocumentScanner/stargazers)
+#### 3. 📄 [ossappscollective/OSS-DocumentScanner](https://github.com/ossappscollective/OSS-DocumentScanner) [![GitHub_Stars](https://img.shields.io/github/stars/ossappscollective/OSS-DocumentScanner?style=social&color=white)](https://github.com/ossappscollective/OSS-DocumentScanner/stargazers)
 - **Role**: Modern Material You Android scanning app with local OCR and multi-cloud sync.
 - **Highlights**: Automatic border detection, batch page scanning, on-device offline Tesseract OCR text layer generation, password-protected PDF exports, and sync with Nextcloud/WebDAV/Google Drive.
 - **Best For**: Privacy enthusiasts wanting a feature-complete alternative to commercial document scanners.
 
-#### 4. 🛡️ [ethereal-developers/OpenScan](https://github.com/ethereal-developers/OpenScan) [![GitHub stars](https://img.shields.io/github/stars/ethereal-developers/OpenScan?style=social&color=white)](https://github.com/ethereal-developers/OpenScan/stargazers)
+#### 4. 🛡️ [ethereal-developers/OpenScan](https://github.com/ethereal-developers/OpenScan) [![GitHub_Stars](https://img.shields.io/github/stars/ethereal-developers/OpenScan?style=social&color=white)](https://github.com/ethereal-developers/OpenScan/stargazers)
 - **Role**: Flutter-powered cross-platform document scanner emphasizing strict zero-telemetry.
 - **Highlights**: Fast edge detection, custom color filters, offline OCR, zero network permissions required, and local encrypted document storage.
 - **Best For**: Users seeking a lightweight, ad-free, completely isolated document scanner.
 
-#### 5. 🗄️ [astubenbord/paperless-mobile](https://github.com/astubenbord/paperless-mobile) [![GitHub stars](https://img.shields.io/github/stars/astubenbord/paperless-mobile?style=social&color=white)](https://github.com/astubenbord/paperless-mobile/stargazers)
+#### 5. 🗄️ [astubenbord/paperless-mobile](https://github.com/astubenbord/paperless-mobile) [![GitHub_Stars](https://img.shields.io/github/stars/astubenbord/paperless-mobile?style=social&color=white)](https://github.com/astubenbord/paperless-mobile/stargazers)
 - **Role**: Companion mobile capture client for self-hosted [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) instances.
 - **Highlights**: In-app camera scanner with automatic cropping, tag and correspondent assignment, full-text search across scanned documents, and background API sync.
 - **Best For**: Self-hosters archiving paper mail, bills, and tax documents directly to their home server.
 
-#### 6. 🌐 [opengisch/QField](https://github.com/opengisch/QField) [![GitHub stars](https://img.shields.io/github/stars/opengisch/QField?style=social&color=white)](https://github.com/opengisch/QField/stargazers)
+#### 6. 🌐 [opengisch/QField](https://github.com/opengisch/QField) [![GitHub_Stars](https://img.shields.io/github/stars/opengisch/QField?style=social&color=white)](https://github.com/opengisch/QField/stargazers)
 - **Role**: Mobile GIS field data and asset capture tool integrated with QGIS.
 - **Highlights**: Touch-optimized interface, GNSS positioning, camera integration for spatial photo attachments, offline vector editing, and seamless cloud synchronization.
 - **Best For**: Environmental surveyors, municipal infrastructure auditors, and utility asset managers.
 
-#### 7. 🍎 [pencilresearch/OpenScanner](https://github.com/pencilresearch/OpenScanner) [![GitHub stars](https://img.shields.io/github/stars/pencilresearch/OpenScanner?style=social&color=white)](https://github.com/pencilresearch/OpenScanner/stargazers)
+#### 7. 🍎 [pencilresearch/OpenScanner](https://github.com/pencilresearch/OpenScanner) [![GitHub_Stars](https://img.shields.io/github/stars/pencilresearch/OpenScanner?style=social&color=white)](https://github.com/pencilresearch/OpenScanner/stargazers)
 - **Role**: Swift-native open-source document scanning app for iOS.
 - **Highlights**: Uses Apple's VisionKit framework for real-time document edge snapping, perspective correction, on-device OCR, and native PDF generation with zero third-party dependencies.
 - **Best For**: iOS users looking for a clean, open, and lightweight alternative to commercial scanning apps.
 
-#### 8. 📐 [OpenScanEu/OpenScan](https://github.com/OpenScanEu/OpenScan) [![GitHub stars](https://img.shields.io/github/stars/OpenScanEu/OpenScan?style=social&color=white)](https://github.com/OpenScanEu/OpenScan/stargazers)
+#### 8. 📐 [OpenScanEu/OpenScan](https://github.com/OpenScanEu/OpenScan) [![GitHub_Stars](https://img.shields.io/github/stars/OpenScanEu/OpenScan?style=social&color=white)](https://github.com/OpenScanEu/OpenScan/stargazers)
 - **Role**: Hardware and software design for physical 3D asset scanning and photogrammetry.
 - **Highlights**: Automated turntable and ring-light rig controlling mobile phone and Raspberry Pi cameras for capturing 360-degree point clouds and texture maps.
 - **Best For**: 3D hobbyists, tabletop miniature sculptors, and archaeological preservationists.
 
-#### 9. 📋 [getodk/collect](https://github.com/getodk/collect) [![GitHub stars](https://img.shields.io/github/stars/getodk/collect?style=social&color=white)](https://github.com/getodk/collect/stargazers)
+#### 9. 📋 [getodk/collect](https://github.com/getodk/collect) [![GitHub_Stars](https://img.shields.io/github/stars/getodk/collect?style=social&color=white)](https://github.com/getodk/collect/stargazers)
 - **Role**: Industrial field data collection Android app used by NGOs, humanitarian teams, and researchers worldwide.
 - **Highlights**: Handles complex survey logic, GPS coordinates, barcode scanning, photo evidence capture, audio recordings, and offline form caching.
 - **Best For**: Global health field teams, environmental monitoring, and large-scale asset inspections.
 
-#### 10. 🏷️ [inventree/inventree-app](https://github.com/inventree/inventree-app) [![GitHub stars](https://img.shields.io/github/stars/inventree/inventree-app?style=social&color=white)](https://github.com/inventree/inventree-app/stargazers)
+#### 10. 🏷️ [inventree/inventree-app](https://github.com/inventree/inventree-app) [![GitHub_Stars](https://img.shields.io/github/stars/inventree/inventree-app?style=social&color=white)](https://github.com/inventree/inventree-app/stargazers)
 - **Role**: Official mobile client for InvenTree, the open-source inventory and asset management system.
 - **Highlights**: Barcode and QR code scanning for parts, locations, and purchase orders; serial number verification; and stock level adjustments directly from mobile devices.
 - **Best For**: Electronics labs, hardware manufacturing workshops, and stockroom managers.
@@ -199,7 +199,7 @@ Contributions from the developer, open-source, and asset capture community are w
    git checkout -b feature/add-new-capture-tool
    ```
 3. 📝 **Add Your Entry**:
-   - Maintain chronological sorting where applicable (SaaS sorted by scale, Open Source sorted by GitHub stars).
+   - Maintain chronological sorting where applicable (SaaS sorted by scale, Open Source sorted by GitHub_Stars).
    - Provide concrete, verified information (exact pricing tiers, free plan boundaries, repo link, and license).
    - Avoid marketing buzzwords; emphasize technical architecture and factual trade-offs.
 4. 🧪 **Validate Formatting**: Ensure markdown tables and link anchors resolve cleanly.
