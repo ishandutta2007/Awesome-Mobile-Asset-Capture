@@ -1,6 +1,6 @@
 # Awesome-Mobile-Asset-Capture
 
-# Top Mobile Asset Capture Tools Ecosystem
+## Top Mobile Asset Capture Tools Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on On-Device Digitization, Barcode-Driven Inventory & Privacy-First Material Capture*  
